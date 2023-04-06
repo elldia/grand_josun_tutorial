@@ -1,0 +1,226 @@
+#popup {position:fixed; left:25px; top:150px; z-index:999; width:500px;}
+#popup dl {padding:20px; background:#222; color:#b29d95;}
+#popup dl dt {font-size:1.5em;margin-bottom:20px;}
+#popup dl dd {line-height:1.5; margin-bottom:20px;}
+#popup .popup_b {padding:20px; background:#fff; color:#222;}
+#popup .popup_b span {}
+#popup .popup_b span #today_close {}
+#popup .popup_b span label {padding-left:10px; font-size:0.85em; letter-spacing:-0.05em; color:#888;}
+#popup .popup_b .popup_close {position:absolute; right:30px; bottom:20px; cursor:pointer; background:none;}
+
+.title {font-family: 'Playfair Display SC', serif;}
+
+.mainArea01, .swiper-container, .swiper-wrapper, .swiper-slide  {height:100%;}
+.mainArea01 {position:relative;}
+.mainArea01 .swiper-container {}
+.mainArea01 .swiper-container .swiper-wrapper {}
+.mainArea01 .swiper-container .swiper-wrapper .swiper-slide {background-size:cover; background-position:center;}
+.mainArea01 .swiper-container .swiper-wrapper .slide1 {background-image:url(../images/bg_main01.jpg);}
+.mainArea01 .swiper-container .swiper-wrapper .slide2 {background-image:url(../images/bg_main02.jpg)}
+.mainArea01 .swiper-container .swiper-wrapper .slide3 {background-image:url(../images/bg_main03.jpg);}
+.mainArea01 .swiper-container .swiper-wrapper .slide4 {background-image:url(../images/bg_main04.jpg);}
+.mainArea01 .area01_contents {position:absolute; width:100%; left:0; bottom: 100px; z-index:9;}
+.mainArea01 .area01_contents .title {
+    color:#fff; font-size:4.0em; letter-spacing:-0.05em; font-weight:700; padding-left:50px;
+}
+.mainArea01 .area01_contents > p {color:#fff; font-size:2.5em; padding:20px 0 0 50px;}
+.mainArea01 .area01_contents .check_inout_wrap {
+    width:95%; height:55px; margin:30px auto 0 50px; background-color:#fff; overflow:hidden;
+}
+.mainArea01 .area01_contents .check_inout_wrap .check1 h2 {
+    display:inline-block; font-size:0.85em; padding:0 10px; font-weight:600; color:#888;
+}
+.mainArea01 .area01_contents .check_inout_wrap a {display:block;  float:left;}
+.mainArea01 .area01_contents .check_inout_wrap .check1 {padding-left: 92px;width:50%; padding-top: 17px;}
+.mainArea01 .area01_contents .check_inout_wrap .check1 span {font-size:1.3em; font-weight:600;}
+.mainArea01 .area01_contents .check_inout_wrap .check1 span:nth-child(2) {}
+.mainArea01 .area01_contents .check_inout_wrap .check1 span:nth-child(3) {
+    position:relative; padding-left:20px;
+}
+.mainArea01 .area01_contents .check_inout_wrap .check1 span:nth-child(3):before {
+    display:block; content:''; height:20px; width:1px; background:#888;
+    position:absolute; left:10px; top:5px;
+}
+.mainArea01 .area01_contents .check_inout_wrap .check2 {width:40%;}
+.mainArea01 .area01_contents .check_inout_wrap .check2 span {
+    display:inline-block; padding:0 30px; font-size:0.75em; font-weight:600;
+    padding-top:15px; color:#888;
+}
+.mainArea01 .area01_contents .check_inout_wrap .check2 span em {color:#333;font-size:1.5em; font-weight:700;}
+.mainArea01 .area01_contents .check_inout_wrap .search_btn {
+    display:block; width:10%; height:55px; float:right; transition: all 0.5s;
+    cursor:pointer; background:#333; color:#fff; font-weight:400;
+}
+.mainArea01 .area01_contents .check_inout_wrap .search_btn:hover {background:#eee; color:#222;}
+
+/*check in/out 날짜 클릭 시 달력 출력*/
+.chk1_contents, .chk2_contents {
+    position:absolute; left:50px; bottom:55px;
+    border-bottom: 1px solid #ddd;
+    width:95%; height:400px; background:#fff; color:#222;
+}
+.chk1_contents .close, .chk2_contents .close {
+    position:absolute; right:20px; top:20px; z-index:999; color:#222; cursor:pointer; font-size:2.0em;
+}
+.chk1_contents {}
+.chk2_contents {}
+.chk1_contents .date_c {width:1000px; margin:0 auto;}
+.chk1_contents .date_c h2 {
+    text-align:center;
+    font-size:1.2em; font-weight:600; padding:50px 0 20px;
+}
+/*통합table*/
+.chk1_contents .date_c table {width:100%;}
+.chk1_contents .date_c table thead {}
+.chk1_contents .date_c table thead th {padding:10px;}
+.chk1_contents .date_c table thead th:nth-child(1) {color:#f00;}
+.chk1_contents .date_c table tbody {}
+.chk1_contents .date_c table tbody td {text-align:center; height:50px; cursor:pointer;}
+.chk1_contents .date_c table tbody td:nth-child(1) {color:#f00;}
+.chk1_contents .date_c table tbody td .today {
+    background:#eee; border-radius:50%; text-align:center; display:inline-block; padding:20px;
+}
+/*개별table*/
+.chk1_contents .date_c .date_prev {width:40%; float:left;}
+.chk1_contents .date_c .date_prev table {}
+.chk1_contents .date_c .date_prev table thead {}
+.chk1_contents .date_c .date_prev table thead th {}
+.chk1_contents .date_c .date_prev table thead th:nth-child(1) {}
+.chk1_contents .date_c .date_prev table tbody {}
+.chk1_contents .date_c .date_prev table tbody tr:nth-child(1) td,
+.chk1_contents .date_c .date_prev table tbody tr:nth-child(2) td,
+.chk1_contents .date_c .date_prev table tbody tr:nth-child(3) td,
+.chk1_contents .date_c .date_prev table tbody tr:nth-child(4) td,
+.chk1_contents .date_c .date_prev table tbody tr:nth-child(5) td:nth-child(1),
+.chk1_contents .date_c .date_prev table tbody tr:nth-child(5) td:nth-child(2) {color:#aaa;}
+.chk1_contents .date_c .date_prev table tbody td {}
+.chk1_contents .date_c .date_prev table tbody td:nth-child(1) {}
+.chk1_contents .date_c .date_prev table tbody td.today {}
+.chk1_contents .date_c .date_next {width:40%; float:right;}
+.chk1_contents .date_c .date_next table {}
+.chk1_contents .date_c .date_next table thead {}
+.chk1_contents .date_c .date_next table thead th {}
+.chk1_contents .date_c .date_next table thead th:nth-child(1) {}
+.chk1_contents .date_c .date_next table tbody {}
+.chk1_contents .date_c .date_next table tbody td {}
+.chk1_contents .date_c .date_next table tbody td:nth-child(1) {}
+
+/*객실 인원 선택*/
+.chk2_contents {}
+.chk2_contents .room_c {width:1000px; margin:0 auto; padding:50px 0;}
+.chk2_contents .room_c .room_left {width:60%; float:left;}
+.chk2_contents .room_c .room_left .room {padding: 20px 0;}
+.chk2_contents .room_c .room_left .room h2 {display:inline-block; font-size:1.2em; font-weight:600;}
+.chk2_contents .room_c .room_left .room p {
+    display:inline-block;
+    border-bottom:1px solid #555; padding: 20px 0; margin:0 20px;
+    width: 200px;text-align: center; font-size: 1.2em;
+}
+.chk2_contents .room_c .room_left .room p button {
+    font-size: 1.2em; background:none; cursor:pointer;
+    width: 30px; height: 30px;
+}
+.chk2_contents .room_c .room_left .room p button:hover {color:#222;}
+.chk2_contents .room_c .room_left .room p .minus {float:left;}
+.chk2_contents .room_c .room_left .room p .plus {float:right;}
+.chk2_contents .room_c .room_left .room p > span {display: inline-block; padding-top: 5px;}
+.chk2_contents .room_c .room_right {width:40%; float:right; text-align:center;}
+.chk2_contents .room_c .room_right p {line-height:1.7; font-size:0.875em;}
+.chk2_contents .room_c .room_right .room_btn {
+    display:inline-block; width:50%; padding:20px 0; margin:20px 0 0;cursor:pointer;
+    border: 1px solid #555; background: none;
+}
+
+/*main area 02*/
+.mainArea02 {padding:100px 0; text-align:center;}
+.mainArea02 h1 {font-size:6.0em;}
+.mainArea02 p:nth-child(2) {font-size:1.5em; margin:30px 0;}
+.mainArea02 p:nth-child(3) {line-height:1.7;}
+
+/*main area 03*/
+.mainArea03 {width:1400px; margin:0 auto 100px; overflow:hidden;}
+.mainArea03 > h1 {font-size:2.5em; font-weight:600; margin-bottom:30px;}
+.mainArea03 .sub_title {font-size:0.75em; font-weight:600; letter-spacing:-0.05em; margin:10px 0; color:#006633;}
+.mainArea03 h2 {font-size:1.2em; margin-bottom:10px; font-weight:600;}
+.mainArea03 a.active {position:absolute; left:0; top:0; z-index:9; width:100%; height:100%; background-color:rgba(22,68,56,0.8); text-align:center;}
+.mainArea03 a.active span {display:inline-block; padding:15px 30px; border:1px solid #ba998c; color:#ba998c;}
+.mainArea03 .left {border-right:1px solid #ddd; padding-right:2%; margin-right:2%; width:66%; float:left;}
+.mainArea03 .left .left_top {height:300px; position:relative; background-image:url(../images/img_gallery03_05.jpg)}
+.mainArea03 .left .left_top a {}
+.mainArea03 .left .left_top a span {margin-top:15%;}
+.mainArea03 .left .left_btm {margin-top:20px;}
+.mainArea03 .left .left_btm .btm_left {margin-right:2%; width:49%; float:left;}
+.mainArea03 .left .left_btm .btm_left p {}
+.mainArea03 .left .left_btm .btm_left h2 {}
+.mainArea03 .left .left_btm .btm_left .img {position:relative; height:150px; margin:20px 0; background-image:url(../images/img_offer02.jpg);}
+.mainArea03 .left .left_btm .btm_left .img a.active {padding-top:10%;}
+.mainArea03 .left .left_btm .btm_right {width:49%; float:right;}
+.mainArea03 .left .left_btm .btm_right p:nth-child(1) {
+    position:relative; height:250px; background-image:url(../images/img_offer03.jpg);
+}
+.mainArea03 .left .left_btm .btm_right p:nth-child(1) a.active {padding-top:20%;}
+.mainArea03 .left .left_btm .btm_right p {}
+.mainArea03 .left .left_btm .btm_right h2 {}
+.mainArea03 .right {
+    position:relative; text-align:center;
+    color:#fff; width:32%; float:right; height:654px; 
+    background-image:url(../images/img_wedding.jpg); background-size:cover;
+}
+.mainArea03 .right p:first-child {padding-top:70%;}
+.mainArea03 .right h2 {font-weight:600; margin:5px 0;}
+.mainArea03 .right a.active {padding-top:70%;}
+
+/*mainArea04*/
+.mainArea04 {width:1200px; float:right; overflow:hidden; margin:0 0 100px;}
+.mainArea04 > h1 {font-size:2.5em; font-weight:600; margin-bottom:30px;}
+.mainArea04 .sub_title {font-size:0.688em; font-weight:600; letter-spacing:-0.05em; margin:10px 0; color:#006633;}
+.mainArea04 .tab_title {}
+.mainArea04 .tab_title a {color:#ccc; font-weight: 600; margin-right:20px;}
+.mainArea04 .tab_title .active {color:#222;}
+.mainArea04 .tab_contents_wrap {}
+.mainArea04 .tab_contents_wrap .tab_contents {position:relative; height:500px;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab_c {width:550px;position:absolute;top:20px; height:100%;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab_c .img {height:300px;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab_c p {font-size:0.75em; line-height:1.5;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab_c p span {}
+.mainArea04 .tab_contents_wrap .tab_contents .tab_c p span sup {}
+.mainArea04 .tab_contents_wrap .tab_contents .tab_c p:last-child {color:#888; margin-top:20px;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab1_c {left:0;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab1_c .img {background-image:url(../images/img_gallery01_05.jpg);}
+.mainArea04 .tab_contents_wrap .tab_contents .tab2_c {left:600px;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab2_c .img {background-image:url(../images/img_gallery02_02.jpg);}
+.mainArea04 .tab_contents_wrap .tab_contents .tab3_c {left:1200px;}
+.mainArea04 .tab_contents_wrap .tab_contents .tab3_c .img {background-image:url(../images/img_gallery02_03.jpg);}
+
+/*mainArea05*/
+.mainArea05 {clear:both;margin-bottom:100px; text-align:center;}
+.mainArea05 span {display:inline-block; height:50px; width:2px; background:#222;}
+.mainArea05 h1 {margin:20px 0; font-size:3.0em;}
+.mainArea05 p {font-size:0.85em;}
+.mainArea05 .btn {margin-top:50px;}
+.mainArea05 .btn a {display:inline-block; padding:20px 40px; }
+.mainArea05 .btn a:nth-child(1) {border:1px solid #222; background:#222; color:#fff;}
+.mainArea05 .btn a:nth-child(2) {border:1px solid #222; background:#fff; color:#222;}
+
+/*mainArea06*/
+.mainArea06 {background-color:#f7f7f7; padding:100px 0; margin-bottom:100px;}
+.mainArea06 .area06_c {width:1200px; margin:0 auto;}
+.mainArea06 .area06_c h1 {font-size:2.5em; font-weight:600;}
+.mainArea06 .area06_c p {font-size:0.85em; line-height:1.7;}
+.mainArea06 .area06_c .map {margin-top:50px;}
+
+/*footer*/
+.f_wrap {background-color:#222; padding:100px 0;}
+.f_wrap a {color:#fff;}
+.f_wrap footer {width:1200px; margin: 0 auto; position:relative;}
+.f_wrap footer .f_logo {display:inline-block; padding-right:50px;}
+.f_wrap footer .f_center {display:inline-block;}
+.f_wrap footer .f_center .link {}
+.f_wrap footer .f_center .link a {font-weight:600; font-size:0.75em;}
+.f_wrap footer .f_center p {font-size:0.75em; line-height:1.5; color:#ccc;}
+.f_wrap footer .f_right {position:absolute; right:0; top:0;}
+.f_wrap footer .f_right .site_btn {padding:5px 20px;}
+.f_wrap footer .f_right .site_c {position:absolute; bottom:50px; right:0; display:none;}
+.f_wrap footer .f_right .site_c a {}
+
+

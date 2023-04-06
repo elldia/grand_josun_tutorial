@@ -1,0 +1,13 @@
+header {position:fixed; left:0; top:0; width:100%; height:70px; z-index:10;}
+header h1 {margin:20px 0 0 20px; float:left; background:url(../images/bg_logo.png) left top; width:94px; height:29px;}
+header h1 a {display:block; width:100%; height:100%;text-indent:-9999px;}
+header nav {float:left; }
+header nav a {transition:all 0.5s;position:relative;color:#fff; font-weight:600; display:inline-block; padding:25px 50px 0;}
+header nav a:nth-child(1) {background:url(../images/ico_rsv.png) no-repeat 163px 27px;}
+header nav a:nth-child(2):before,
+header nav a:nth-child(3):before {
+    display:block; content:''; height:12px; width:1px;
+    background-color:#fff;
+    position:absolute; left:-5px; top:27px;
+}
+header nav a:hover {color:#eee;}
